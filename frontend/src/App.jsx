@@ -11,7 +11,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   function GoogleAuthWrapper() {
     return (
-      <GoogleOAuthProvider clientId="817011788427-gvg7b2o642mp674pgbkgnska8hjmt5a4.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId={import.meta.env.VITE_CLIENT_ID}>
         <GoogleLogin />
       </GoogleOAuthProvider>
     );
